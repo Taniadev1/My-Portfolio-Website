@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import pic from "/pic.jpg";
 import { FiMenu } from "react-icons/fi";
 import { RxCross1 } from "react-icons/rx";
-import {Link} from "react-scroll"
+import { Link } from "react-scroll";
 
 function Navbar() {
   const [Menu, setMenu] = useState(false);
@@ -49,19 +49,20 @@ function Navbar() {
                   className="hover:scale-105 duration-200 cursor-pointer font-semi-bold"
                   key={id}
                 >
-                  <Link to={text}
-                  smooth={true}
-                  duration={500}
-                  offset={-70}
-                  activeClass="active">
-                  {text}
+                  <Link
+                    to={text}
+                    smooth={true}
+                    duration={500}
+                    offset={-70}
+                    activeClass="active"
+                  >
+                    {text}
                   </Link>
                 </li>
               ))}
             </ul>
             <div onClick={() => setMenu(!Menu)} className="md:hidden">
-              {Menu ? <RxCross1 size={24} /> 
-              : <FiMenu size={24} />}
+              {Menu ? <RxCross1 size={24} /> : <FiMenu size={24} />}
             </div>
           </div>
         </div>
@@ -75,17 +76,18 @@ function Navbar() {
                   className="hover:scale-105 duration-200 cursor-pointer"
                   key={id}
                 >
-                 <Link 
-                 onClick={() => setMenu(!Menu)}
-                 to={text}
-                  smooth={true}
-                  duration={500}
-                  offset={-70}
-                  activeClass="active">
-                  {text}
+                  <Link
+                    onClick={() => setMenu(!Menu)}
+                    to={text}
+                    smooth={true}
+                    duration={500}
+                    offset={-70}
+                    activeClass="active"
+                  >
+                    {text}
                   </Link>
                 </li>
-          ))}
+              ))}
             </ul>
           </div>
         )}

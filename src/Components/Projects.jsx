@@ -21,7 +21,7 @@ function Projects() {
                     Google-Maps API
                   </div>
                   <p className="mt-2 text-slate-500">
-                    Google Maps API using tailwind CSS and react.js. Google Maps
+                    Google Maps API using tailwind CSS and react.js. Google-Map
                     is a web service that provides detailed information about
                     geographical regions and sites worldwide.
                   </p>
